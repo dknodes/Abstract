@@ -116,7 +116,7 @@ view_logs() {
     esac
 
     echo -e "${LOGS} Tailing logs for $container...${RESET}"
-    docker logs -f --tail=0 $container
+    docker logs -f $container
     read -p "Press Enter to return to the main menu."
 }
 
