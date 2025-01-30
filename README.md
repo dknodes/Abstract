@@ -13,4 +13,4 @@ Mainnet Nodes: 300 GB, with the state growing about 1TB per month.
 Network: 100 Mbps connection (1 Gbps+ recommended)
 
 
-<code>sudo bash -c 'git clone https://github.com/dknodes/Abstract.git && cd titan  && chmod ugo+x AbstractDK.sh && ./AbstractDK.sh'</code>
+<code>sudo bash -c 'git clone https://github.com/dknodes/Abstract.git && cd Abstract  && chmod ugo+x AbstractDK.sh && ./AbstractDK.sh'</code>
