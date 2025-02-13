@@ -93,14 +93,14 @@ install_testnet() {
 # ----------------------------
 view_logs() {
     echo -e "${INFO} Available containers:${RESET}"
-    echo "1. node-external-node-1"
-    echo "2. node-postgres-1"
-    echo "3. node-prometheus-1"
-    echo "4. node-grafana-1"
-    # echo "5. mainnet-node-external-node-1"
-    # echo "6. mainnet-node-postgres-1"
-    # echo "7. mainnet-node-prometheus-1"
-    # echo "8. mainnet-node-grafana-1"
+    echo "1. testnet-node-external-node-1"
+    echo "2. testnet-node-postgres-1"
+    echo "3. testnet-node-prometheus-1"
+    echo "4. testnet-node-grafana-1"
+    echo "5. mainnet-node-external-node-1"
+    echo "6. mainnet-node-postgres-1"
+    echo "7. mainnet-node-prometheus-1"
+    echo "8. mainnet-node-grafana-1"
     
     read -p "Enter container number [1-8]: " num
     case $num in
@@ -108,10 +108,10 @@ view_logs() {
         2) container="testnet-node-postgres-1";;
         3) container="testnet-node-prometheus-1";;
         4) container="testnet-node-grafana-1";;
-        # 5) container="mainnet-node-external-node-1";;
-        # 6) container="mainnet-node-postgres-1";;
-        # 7) container="mainnet-node-prometheus-1";;
-        # 8) container="mainnet-node-grafana-1";;
+        5) container="mainnet-node-external-node-1";;
+        6) container="mainnet-node-postgres-1";;
+        7) container="mainnet-node-prometheus-1";;
+        8) container="mainnet-node-grafana-1";;
         *) echo -e "${ERROR} Invalid selection${RESET}"; return;;
     esac
 
